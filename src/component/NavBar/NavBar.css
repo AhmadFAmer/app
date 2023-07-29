@@ -1,0 +1,15 @@
+.logo{
+    position: absolute;
+    top: 0;
+    z-index:3;
+}
+.navbar{
+    font-size:17px;
+    font-weight:500;
+}
+.navbar .nav-link:hover,.navbar .nav-link:focus{
+    color: var(--green) !important;
+}
+.search{
+    border-left: 1px solid var(--green) !important;
+}

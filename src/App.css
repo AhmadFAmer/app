@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;1000&family=Sora:wght@700&display=swap');
+:root{
+    --green: rgb(136, 180, 78);
+    --black:rgb(37, 44, 48);
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Playfair Display', serif;
+    font-weight: bolder !important;
+}
+.green{
+    color: var(--green);
+}
+.section-title {
+    position: relative;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+}
+.section-title::after {
+    position: absolute;
+    content: "";
+    width: 28px;
+    height: 28px;
+    bottom: -13px;
+    left: calc(25% - 13px);
+    background: var(--black);
+    border: 10px solid #FFFFFF;
+    border-radius: 28px;
+}
+.section-title::before {
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: var(--green);
+}
+#goUp{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50% 50%;
+    background-color:var(--green) ;
+    z-index: 3;
+    border:none ;
+    color:white;
+}
+.m-w-500{
+    max-width: 500px;
+}
+.section-title.text-center::before {
+    left: 25%;
+}
+.section-title.text-center::after {
+    left: calc(50% - 13px);
+}
+.cover{
+    background-size: cover;
+}
+.contact-icon{
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    color: white;
+    background-color:var(--green);
+    border-radius: 50% 50%;   
+    outline: #e6e6e6 10px solid;
+    margin: 30px 0 30px 0;
+}
+.footer{
+    color: #B0B9AE;
+    background-color: #252C30;
+}
+.btn-hover{
+    background-color: var(--green) !important;
+    color: white !important;
+    border: none !important;
+}
+.btn-hover:hover{
+    background-color:#9ABF69;
+    color: var(--black) !important;
+}
+.footer-icon{
+    color: var(--green);
+}
+.copyright{
+    color: #B0B9AE;
+    background-color: #252525;
+}
+.copy{
+    color: var(--green);
+    text-decoration: none;
+}
