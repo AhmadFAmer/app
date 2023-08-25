@@ -1,0 +1,26 @@
+/* General slick-arrow styles, adjusting the width and height */
+.slick-arrow {
+  width: 55px;
+  height: 55px;
+}
+
+/* Using absolute positioning to place the arrows at the bottom of the slider */
+.slick-prev-custom,
+.slick-next-custom {
+  position: absolute;
+  bottom: -70px; /* Adjust this value as required to position the arrows below the slider */
+  z-index: 3;
+}
+
+/* Individual adjustments for each arrow */
+.slick-prev-custom {
+  left: calc(
+    50% - 65px
+  ); /* Adjust this value as required to position the left arrow */
+}
+
+.slick-next-custom {
+  right: calc(
+    50% - 65px
+  ); /* Adjust this value as required to position the right arrow */
+}

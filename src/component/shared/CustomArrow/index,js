@@ -1,0 +1,32 @@
+const Styles = {
+  cursor: "pointer",
+  width: "30px",
+  height: "30px",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  backgroundColor: "rgba(0,0,0,0.5)", // semi-transparent black
+  color: "white",
+  borderRadius: "50%",
+};
+
+export function leftArrow({ onClick }) {
+  return (
+    <div
+      style={{ background: "red", widow: "100px", height: "100px" }}
+      onClick={onClick}
+    >
+      {/* Your custom SVG or character for the left arrow */}
+      {"<"}
+    </div>
+  );
+}
+
+export function rightArrow({ onClick }) {
+  return (
+    <div style={{ ...Styles }} onClick={onClick}>
+      {/* Your custom SVG or character for the right arrow */}
+      {">"}
+    </div>
+  );
+}
